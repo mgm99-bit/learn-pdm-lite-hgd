@@ -8,7 +8,7 @@
 | 3 퀴즈 | 완료 (2026-10-31) | B1 1문항, 정답 2번 |
 | 4 실습 MVP | 완료 · 승인 ② (2026-10-31) | verify 9/9 · render 콘솔 0 · 모바일 390 |
 | 5 학습자 자료 | 완료 (2026-10-31) | GUIDE.md만 (매뉴얼 덱은 라이트판이라 생략) |
-| 6 배포 | | |
+| 6 배포 | 완료 · 승인 ③ public (2026-10-31) | 저장소 https://github.com/mgm99-bit/learn-pdm-lite-hgd · 사이트 https://mgm99-bit.github.io/learn-pdm-lite-hgd/ (built, HTTP 200) · 첫 커밋 eb0debd · zip kma-forge/learn-pdm-lite-hgd.zip |
 | 7 배우기·공유 | | |
 
 ## 사용자 지시 (2026-10-31)
