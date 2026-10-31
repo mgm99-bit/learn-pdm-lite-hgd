@@ -1,0 +1,4 @@
+learn-pdm-lite-hgd: 블록 3개 · 퀴즈 1문항
+오류 2건 · 경고 0건
+  [오류] .claude\skills\learn-pdm-lite-hgd\references\block2-publish.md: QUIZ에 AskUserQuestion 문항 없음
+  [오류] .claude\skills\learn-pdm-lite-hgd\references\block2-publish.md: QUIZ에 정답·해설 없음

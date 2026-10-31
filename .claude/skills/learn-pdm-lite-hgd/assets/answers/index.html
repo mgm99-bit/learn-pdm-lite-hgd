@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>예지보전 라이트 — 노이즈 vs 추세</title>
+<style>
+:root { --bg:#fff; --fg:#1f2937; --mute:#6b7280; --line:#e5e7eb; }
+@media (prefers-color-scheme: dark) { :root { --bg:#111827; --fg:#f3f4f6; --mute:#9ca3af; --line:#374151; } }
+* { box-sizing:border-box; }
+body { margin:0; background:var(--bg); color:var(--fg); font-family:system-ui,-apple-system,"Malgun Gothic",sans-serif; }
+main { max-width:760px; margin:0 auto; padding:24px 16px; }
+h1 { font-size:1.35rem; margin:0 0 4px; }
+.tag { color:var(--mute); font-size:.85rem; margin:0 0 12px; }
+.sum { margin:0 0 16px; line-height:1.55; }
+svg { width:100%; height:auto; display:block; }
+.grid { stroke:var(--line); } .ax { fill:var(--mute); font-size:12px; }
+.lim { stroke-dasharray:6 5; stroke-width:1.5; }
+.dot { fill:none; stroke:#dc2626; stroke-width:2.5; }
+.note { fill:var(--fg); font-size:12px; }
+.mt { stroke:#dc2626; stroke-dasharray:3 4; }
+.legend { display:flex; flex-wrap:wrap; gap:6px 16px; font-size:.85rem; margin:8px 0 0; padding:0; list-style:none; }
+.legend i { display:inline-block; width:14px; height:3px; vertical-align:middle; margin-right:6px; }
+footer { color:var(--mute); font-size:.8rem; margin-top:16px; line-height:1.5; }
+</style></head>
+<body><main>
+<h1>노이즈인가, 추세인가 — 설비 2대 진동 (mm/s)</h1>
+<p class="tag">가상 데이터(실습용) · 2026-09-15 08:00~16:00 · 20분 간격</p>
+<p class="sum">설비A는 12:40 진동 3.5 한 점만 튀고 돌아온 <b>노이즈</b>, 설비B는 15:00부터 꾸준히 오른 <b>추세</b> — 정비 신호는 설비B다.</p>
+<svg viewBox="0 0 720 380" role="img" aria-label="설비별 진동 추이"><line x1="48" x2="704" y1="340.0" y2="340.0" class="grid"/><text x="40" y="344.0" class="ax" text-anchor="end">0</text><line x1="48" x2="704" y1="261.0" y2="261.0" class="grid"/><text x="40" y="265.0" class="ax" text-anchor="end">1</text><line x1="48" x2="704" y1="182.0" y2="182.0" class="grid"/><text x="40" y="186.0" class="ax" text-anchor="end">2</text><line x1="48" x2="704" y1="103.0" y2="103.0" class="grid"/><text x="40" y="107.0" class="ax" text-anchor="end">3</text><line x1="48" x2="704" y1="24.0" y2="24.0" class="grid"/><text x="40" y="28.0" class="ax" text-anchor="end">4</text><text x="48.0" y="358" class="ax" text-anchor="middle">08:00</text><text x="130.0" y="358" class="ax" text-anchor="middle">09:00</text><text x="212.0" y="358" class="ax" text-anchor="middle">10:00</text><text x="294.0" y="358" class="ax" text-anchor="middle">11:00</text><text x="376.0" y="358" class="ax" text-anchor="middle">12:00</text><text x="458.0" y="358" class="ax" text-anchor="middle">13:00</text><text x="540.0" y="358" class="ax" text-anchor="middle">14:00</text><text x="622.0" y="358" class="ax" text-anchor="middle">15:00</text><text x="704.0" y="358" class="ax" text-anchor="middle">16:00</text><line x1="48" x2="704" y1="175.5" y2="175.5" stroke="#2563eb" class="lim"/><polyline points="48.0,261.8 75.3,257.1 102.7,267.3 130.0,266.5 157.3,257.1 184.7,261.0 212.0,266.5 239.3,264.2 266.7,266.5 294.0,264.2 321.3,256.3 348.7,261.0 376.0,253.1 403.3,268.9 430.7,63.5 458.0,261.0 485.3,257.8 512.7,265.7 540.0,256.3 567.3,256.3 594.7,259.4 622.0,258.6 649.3,261.8 676.7,266.5 704.0,258.6" fill="none" stroke="#2563eb" stroke-width="2.5"/><line x1="48" x2="704" y1="176.8" y2="176.8" stroke="#ea580c" class="lim"/><polyline points="48.0,265.7 75.3,257.1 102.7,258.6 130.0,258.6 157.3,257.1 184.7,261.0 212.0,257.1 239.3,260.2 266.7,260.2 294.0,264.2 321.3,259.4 348.7,260.2 376.0,257.8 403.3,257.8 430.7,256.3 458.0,257.1 485.3,254.7 512.7,253.1 540.0,251.5 567.3,253.9 594.7,261.0 622.0,237.3 649.3,205.7 676.7,166.2 704.0,110.9" fill="none" stroke="#ea580c" stroke-width="2.5"/><circle cx="430.7" cy="63.5" r="6" class="dot"/><text x="422.7" y="53.5" class="note" text-anchor="end">3.5 노이즈</text><circle cx="676.7" cy="166.2" r="6" class="dot"/><text x="668.7" y="156.2" class="note" text-anchor="end">2.2 추세</text><circle cx="704.0" cy="110.9" r="6" class="dot"/><text x="696.0" y="100.9" class="note" text-anchor="end">2.9 추세</text><line x1="622.0" x2="622.0" y1="24" y2="340" class="mt"/><text x="616.0" y="36" class="note" text-anchor="end">정비 필요 시점 15:00</text></svg>
+<ul class="legend">
+<li><i style="background:#2563eb"></i>설비A 프레스 메인모터 (점선: 평상범위 상한 2.08)</li>
+<li><i style="background:#ea580c"></i>설비B 차체 용접로봇 감속기 (점선: 평상범위 상한 2.07)</li>
+<li><i style="background:#dc2626"></i>이상 후보 · 정비 필요 시점</li>
+</ul>
+<footer>평상 범위 = 설비별 평균 ± 2표준편차. 한 번 튀고 돌아오면 노이즈, 임계선을 향해 꾸준히 오르면 추세 — 상승의 시작점이 정비 신호.<br>
+데이터: keerhee/kma-auto-genai-3-1 · data/Day5/Day5_설비센서_50건_가상.csv (가상 데이터, 실제 기업 자료 아님)</footer>
+</main></body></html>

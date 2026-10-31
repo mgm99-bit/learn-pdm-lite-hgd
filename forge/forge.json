@@ -1,0 +1,9 @@
+{
+  "slug": "learn-pdm-lite-hgd",
+  "answer": {
+    "skill": "learn-pdm-lite-hgd",
+    "workdir": "assets/lab",
+    "cmd": "python -I {answers}/build_pdm_lite.py",
+    "expected": "assets/answers/expected.json"
+  }
+}

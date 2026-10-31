@@ -1,0 +1,49 @@
+{
+  "values": {
+    "rows": {
+      "value": 50,
+      "decimals": 0,
+      "block": 0
+    },
+    "equipments": {
+      "value": 2,
+      "decimals": 0,
+      "block": 0
+    },
+    "rows_per_equipment": {
+      "value": 25,
+      "decimals": 0,
+      "block": 0
+    },
+    "a_vib_upper": {
+      "value": 2.08,
+      "decimals": 2,
+      "block": 1
+    },
+    "b_vib_upper": {
+      "value": 2.07,
+      "decimals": 2,
+      "block": 1
+    },
+    "a_vib_anomaly": {
+      "value": "12:40 3.5",
+      "decimals": null,
+      "block": 1
+    },
+    "b_vib_anomalies": {
+      "value": "15:40 2.2 · 16:00 2.9",
+      "decimals": null,
+      "block": 1
+    },
+    "b_temp_anomaly": {
+      "value": "16:00 65.1",
+      "decimals": null,
+      "block": 1
+    },
+    "b_trend_start": {
+      "value": "15:00",
+      "decimals": null,
+      "block": 1
+    }
+  }
+}
